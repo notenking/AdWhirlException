@@ -27,7 +27,7 @@ public class AdWhirlTestActivity extends FragmentActivity {
         viewPager.setAdapter(new MyAdapter(getSupportFragmentManager()));
 		
         LinearLayout adView = (LinearLayout)this.findViewById(R.id.adView);
-        AdWhirlLayout  adWhirlLayout = new AdWhirlLayout(this, "dc74710b128b4eb391b7e20be53a15c8");
+        AdWhirlLayout  adWhirlLayout = new AdWhirlLayout(this, "Your adwhirl ID");
         AdWhirlManager.setConfigExpireTimeout(45*1000);
         AdWhirlTargeting.setTestMode(false);
         adView.addView(adWhirlLayout);
